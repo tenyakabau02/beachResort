@@ -36,7 +36,7 @@ render() {
    return (
     <React.Fragment>
        <StyledHero img ={ mainImg || this.state.defaultBcg }>
-         <Banner title = {`${name}` room}>
+         <Banner title = {`${name} room`}>
            <Link to = "/rooms" className ="btn-primary">BACK TO ROOMS</Link>
          </Banner>
         </StyledHero>
@@ -73,6 +73,9 @@ render() {
                return <li key = {index}> - {item}</li>
              })}
             </ul>
+            <div className = "booking-btn">
+              <Link to = "/book" className = "btn-primary">Book now</Link>
+            </div>
           </section>
       </React.Fragment>
      )

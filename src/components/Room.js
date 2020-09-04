@@ -23,11 +23,11 @@ function Room({room}) {
 
 Room.propTypes = {
   room : PropTypes.shape({
-    name : PropTypes.string,
-    slug : PropTypes.string,
-    images : PropTypes.arrayOf(PropTypes.string,
-    price : PropTypes.number
-  }).isRequired
-}
+    name : PropTypes.string.isRequired,
+    slug : PropTypes.string.isRequired,
+    images : PropTypes.arrayOf(PropTypes.string).isRequired,
+    price : PropTypes.number.isRequired
+  })
+};
 
 export default Room;

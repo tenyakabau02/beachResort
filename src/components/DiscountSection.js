@@ -1,24 +1,16 @@
 import React from 'react';
-import Hero from './Hero';
+import { Link } from 'react-router-dom';
 
 function DiscountSection() {
   return (
     <React.Fragment>
-       <Hero hero ="discountHero">
-       <div class="discount-highlights">
-         <div class="container">
-           <div class="row">
-             <div class="col-md-8">
-             <h2>Get some 20% flat discount on top and luxurious rooms</h2>
-             <p>Hurry up and book your room now before 31st August.</p>
-           </div>
-           <div class="col-md-4">
-              <button type="button" class="booking-btn">Book Now</button>
-           </div>
-           </div>
-         </div>
-       </div>
-       </Hero>
+             <div className = "discount-section">
+                 <h2>Get 20% flat discount on our luxurious rooms </h2>
+                 <h5>Book your room in advance before 31 August and get 20% available discount</h5>
+                 <div className = "booking-btn">
+                   <Link to = "/rooms" className = "btn-primary">Book now</Link>
+                 </div>
+             </div>
     </React.Fragment>
   );
 }

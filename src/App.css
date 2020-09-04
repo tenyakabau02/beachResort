@@ -21,38 +21,54 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Merriweather',sans-serif;
   line-height: 1.4;
 }
 h1 {
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.5em;
+  font-family: 'Montserrat',sans-serif;
 }
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
+  font-family: 'Montserrat',sans-serif;
 }
 h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
+  font-family: 'Montserrat',sans-serif;
 }
 h4 {
   font-size: 1.2em;
   line-height: 1.25;
   margin-bottom: 1.25em;
+  font-family: 'Montserrat',sans-serif;
 }
 h5 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.5em;
+  font-family: 'Montserrat',sans-serif;
 }
 h6 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.5em;
+  font-family: 'Montserrat',sans-serif;
 }
+
+hr{
+border-style: none;
+border-top-style: solid;
+border-color: var(--mainWhite);
+border-width: 2px;
+width: 70%;
+margin: 10px auto;
+}
+
 
 .btn-primary {
   display: inline-block;
@@ -69,6 +85,11 @@ h6 {
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
+}
+
+.booking-btn {
+  margin-top: 2rem;
+  text-align: center;
 }
 .loading {
   text-transform: capitalize;
@@ -158,7 +179,7 @@ h6 {
 /* end of navbar */
 /* Hero */
 .defaultHero,
-.roomsHero, .discountHero {
+.roomsHero{
   min-height: calc(100vh - 66px);
   background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
@@ -170,32 +191,8 @@ h6 {
   min-height: 60vh;
 }
 
-.discountHero {
-  height: 80%;
-  background-image: url(images/DscountBanner.jpg);
-  padding-top: 14%;
-}
 /* End of Hero */
 
-/**discount section **/
-
-.discount-highlights{
-  padding 70px 0;
-  background: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  color: #fff;
-}
-.booking-btn{
-    width: 120px;
-    padding: 8px 0;
-    outline: none !important;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    background: transparent;
-    color: #fff;
-    margin-top: 20px;
-}
-/**end of discount**/
 
 /* Banner */
 .banner {
@@ -258,7 +255,7 @@ h6 {
 
 /* services */
 .services {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 .services {
   background: var(--darkGrey);
@@ -300,6 +297,17 @@ h6 {
 }
 /*end of services */
 
+/** discount section **/
+.discount-section {
+  background-color: var(--offWhite);
+  padding:7%;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+
+/** end of discount section **/
+
 /*start of footer*/
 
 .footer {
@@ -307,7 +315,7 @@ h6 {
 }
 
 .footer-container {
-  padding : 5% 10% ;
+  padding : 4% 7% ;
   text-align: center;
 }
 
@@ -492,7 +500,7 @@ h6 {
 /* end of single room*/
 /* roomlist */
 .roomslist {
-  padding: 54rem 0;
+  padding: 5rem 0;
 }
 .roomslist-center {
   width: 80vw;
@@ -517,7 +525,7 @@ h6 {
 /* end of roomlist */
 /*  rooms fitler*/
 .filter-container {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 .filter-form {
   width: 60vw;
